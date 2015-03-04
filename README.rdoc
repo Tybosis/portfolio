@@ -1,28 +1,13 @@
-== README
+# My Portfolio
+<!-- If you'd like to use a logo instead uncomment this code and remove the text above this line
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  ![Logo](URL to logo img file goes here)
 
-Things you may want to cover:
+-->
 
-* Ruby version
+By Tyler Pottle.
 
-* System dependencies
+## Description
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This app display a static webpage with some information about me, and well
+as my personal contact information.
