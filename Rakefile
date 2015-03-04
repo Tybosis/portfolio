@@ -7,7 +7,8 @@ Rails.application.load_tasks
 
 require 'rake/testtask'
 
- Rake::TestTask.new do |t|
-  t.libs << "spec"
-  t.pattern = "spec/**/*_spec.rb"
+ Rake::TestTask.new("test:features") do |t|
+  t.libs << "lib"
+  t.libs << "test"
+  t.pattern = "test/features/*_test.rb"
  end
