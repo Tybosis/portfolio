@@ -7,4 +7,4 @@ By Tyler Pottle.
 This project display a static webpage with some information about me, and well
 as my personal contact information, and also includes blog functionality.
 
-See the blog in action [here!](http://tinyurl.com/p9g6mau)
+See a screenshot of the blog [here!](http://tinyurl.com/p9g6mau)
