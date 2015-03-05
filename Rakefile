@@ -10,5 +10,5 @@ require 'rake/testtask'
  Rake::TestTask.new("test:features") do |t|
   t.libs << "lib"
   t.libs << "test"
-  t.pattern = "test/features/*_test.rb"
+  t.pattern = "**/*_test.rb"
  end
