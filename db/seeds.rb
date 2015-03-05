@@ -7,6 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 10.times do |x|
-Article.create(title: "#{Faker::Hacker.adjective} #{Faker::Hacker.noun}",
-               content: Faker::Hacker.say_something_smart)
+Article.create!(title: "#{Faker::Hacker.adjective} #{Faker::Hacker.noun}",
+                content: Faker::Hacker.say_something_smart)
 end
