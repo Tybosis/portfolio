@@ -13,7 +13,7 @@ end
 
 
 class ActiveSupport::TestCase
-    ActiveRecord::Migration.check_pending!
+  ActiveRecord::Migration.check_pending!
 
     # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
   #
@@ -23,5 +23,3 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
-
-

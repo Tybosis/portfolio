@@ -10,6 +10,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+gem 'faker'
 
 group :development, :test do
   gem 'byebug'
@@ -17,4 +18,5 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'capybara'
   gem 'minitest-rails-capybara'
+  gem 'rubocop', require: false
 end
