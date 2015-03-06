@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'faker'
 gem 'foundation-rails'
+gem 'minitest-rails'
 
 group :development, :test do
   gem 'byebug'
@@ -26,3 +27,5 @@ group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
+
+ruby "2.2.0"
