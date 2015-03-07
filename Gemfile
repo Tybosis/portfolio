@@ -12,6 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'faker'
 gem 'foundation-rails'
 gem 'minitest-rails'
+gem "rack-timeout"
 
 group :development, :test do
   gem 'byebug'
@@ -26,6 +27,7 @@ end
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
+  gem 'puma'
 end
 
 ruby "2.2.0"
