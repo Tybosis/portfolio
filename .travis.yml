@@ -18,3 +18,5 @@ bundler_args: --binstubs=./bundler_stubs
 deploy:
   provider: heroku
   app: gentle-caverns-3821
+  api-key: "99cdc82f-6766-4725-875c-3dabedbefc8c"
+  run: "rake db:migrate"
