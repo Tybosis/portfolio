@@ -1,0 +1,7 @@
+portfolio:
+  title: Really Cool
+  technologies_used: Ruby, Brainfuck, Lisp
+
+freelance:
+  title: Movie App
+  technologies_used: Ruby, Rails, Farmville API, Automilker
