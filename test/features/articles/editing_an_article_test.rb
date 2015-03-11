@@ -6,7 +6,8 @@ feature "Editing An Article" do
     visit article_path(articles(:article_1))
     page.text.must_include 'Edit'
     # When I click edit I can update the title and content with new text
-    click_on 'Edit'
+    sign_in
+    all('a').select { |link| link.text == "Edit" }.first.click
     fill_in('Title', with: 'This is the New Title')
     fill_in('Content', with: 'And this is the new content')
     click_on 'Update'
