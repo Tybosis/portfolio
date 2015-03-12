@@ -1,0 +1,13 @@
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+
+<p>
+  <strong>Technologies Used:</strong>
+  <%= @project.technologies_used %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<td><%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' } %></td> |
+<%= link_to 'Back', projects_path %>

@@ -16,4 +16,8 @@ describe 'my portfolio home page' do
   it 'includes a titles for contact links' do
     page.text.must_include "Let's Talk"
   end
+
+  it 'includes a titles for contact links' do
+    page.html.must_include 'twitter'
+  end
 end

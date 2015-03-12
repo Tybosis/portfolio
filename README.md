@@ -4,7 +4,7 @@ By Tyler Pottle.
 
 ## Description
 
-This project display a static webpage with some information about me, and well
-as my personal contact information, and also includes blog functionality.
+This is my personal portfolio/blog with some basic information about me, my personal
+contact information, my blog, and also some personal projects.
 
-See a screenshot of the blog [here!](http://tinyurl.com/p9g6mau)
+See this project in action [here!](http://www.tylerpottle.com)
