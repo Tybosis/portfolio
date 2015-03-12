@@ -13,6 +13,7 @@ gem 'faker'
 gem 'foundation-rails'
 gem 'minitest-rails'
 gem "rack-timeout"
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'

@@ -1,3 +1,4 @@
+<%= render 'articles/header' %>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -8,6 +9,11 @@
 <p>
   <strong>Content:</strong>
   <%= @article.content %>
+</p>
+
+<p>
+  <strong id="author">By:</strong>
+  <%= @article.author.email %>
 </p>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |

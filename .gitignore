@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 .env
+
+# Ignore DS_store
+.DS_Store
