@@ -12,3 +12,13 @@ batman:
 superman:
   email: clark@dailyplanet.com
   encrypted_password: <%= User.new.send(:password_digest, "1234fake") %>
+
+author:
+  role: author
+  email: 123@fake.com
+  encrypted_password: <%= User.new.send(:password_digest, 'password') %>
+
+editor:
+  role: editor
+  email: name@email.com
+  encrypted_password: <%= User.new.send(:password_digest, 'password') %>

@@ -22,10 +22,10 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
-  def sign_in
-    click_on 'Sign In'
-    fill_in('Email', with: 'clark@dailyplanet.com')
-    fill_in('Password', with: '1234fake')
+  def sign_in(role=:editor)
+    visit new_user_session_path
+    fill_in('Email', with: users(role).email)
+    fill_in('Password', with: 'password')
     click_on 'Log in'
   end
 end
