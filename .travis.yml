@@ -22,4 +22,4 @@ deploy:
   app: gentle-caverns-3821
   run: rake db:migrate
   api_key:
-    secure: ejdWOlzf1+Qy2Nnaqkgvnlo/PJMQydieAU4BCFzaTIAHubzYpWGm/VZpWxhAZK2o3TG0+OutT9J6f2Bfa4KCeOQlGDavjG9NAvoLEKuMljFL8mX8Ovtif8cH9+mEeExjDQkwzS3kURHxjFIcZA3Lm9iQSlbYvslY4yk+ilOKm9s=
+  - secure: "ejdWOlzf1+Qy2Nnaqkgvnlo/PJMQydieAU4BCFzaTIAHubzYpWGm/VZpWxhAZK2o3TG0+OutT9J6f2Bfa4KCeOQlGDavjG9NAvoLEKuMljFL8mX8Ovtif8cH9+mEeExjDQkwzS3kURHxjFIcZA3Lm9iQSlbYvslY4yk+ilOKm9s="
