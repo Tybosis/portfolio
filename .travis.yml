@@ -6,7 +6,6 @@ env:
   - DB=sqlite
   - DB=mysql
   - DB=postgresql
-
 script:
 - RAILS_ENV=test bundle exec rake db:migrate --trace
 - bundle exec rake db:test:prepare
@@ -22,4 +21,4 @@ deploy:
   app: gentle-caverns-3821
   run: rake db:migrate
   api_key:
-  - secure: "ejdWOlzf1+Qy2Nnaqkgvnlo/PJMQydieAU4BCFzaTIAHubzYpWGm/VZpWxhAZK2o3TG0+OutT9J6f2Bfa4KCeOQlGDavjG9NAvoLEKuMljFL8mX8Ovtif8cH9+mEeExjDQkwzS3kURHxjFIcZA3Lm9iQSlbYvslY4yk+ilOKm9s="
+    secure: YwhAHE5P/vQl8TrxS0/osdHJ0EChKrqMmGIfUaWEIUPB8VVvRzVYSQbLG2I8fiG+MWJba4QSIacfeH7cY7mxf8KlErlPIkpj67gtcI8md8zHdHkpbKGWoiNGL8sW7ZNNGdkP23YvUartNfMGyDMt5X5W3tyV+lEPvOJAr3X8eTU=
