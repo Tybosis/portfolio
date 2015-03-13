@@ -1,25 +1,24 @@
 language: ruby
 rvm:
-  - 2.2.0
+- 2.2.0
 env:
+  matrix:
   - DB=sqlite
   - DB=mysql
   - DB=postgresql
+  global:
+    secure: ejdWOlzf1+Qy2Nnaqkgvnlo/PJMQydieAU4BCFzaTIAHubzYpWGm/VZpWxhAZK2o3TG0+OutT9J6f2Bfa4KCeOQlGDavjG9NAvoLEKuMljFL8mX8Ovtif8cH9+mEeExjDQkwzS3kURHxjFIcZA3Lm9iQSlbYvslY4yk+ilOKm9s=
 script:
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake db:test:prepare
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
 before_script:
-  - mysql -e 'create database my_app_test'
-  - psql -c 'create database my_app_test' -U postgres
-bundler_args: --binstubs=./bundler_stubs
-
-# whitelist
+- mysql -e 'create database my_app_test'
+- psql -c 'create database my_app_test' -U postgres
+bundler_args: "--binstubs=./bundler_stubs"
 branches:
   only:
-    - master
-
+  - master
 deploy:
   provider: heroku
   app: gentle-caverns-3821
-  api-key: "99cdc82f-6766-4725-875c-3dabedbefc8c"
-  run: "rake db:migrate"
+  run: rake db:migrate
