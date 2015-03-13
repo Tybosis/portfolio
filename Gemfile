@@ -24,6 +24,7 @@ group :development, :test do
   gem 'capybara'
   gem 'minitest-rails-capybara'
   gem 'rubocop', require: false
+  gem 'simplecov', require: false, group: :test
 end
 
 group :production do

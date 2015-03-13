@@ -6,9 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+editor = User.create!(role: 'editor', email: "email2@website.com", password: '1234fake')
+
 10.times do |x|
 Article.create!(title: "#{Faker::Hacker.adjective} #{Faker::Hacker.noun}",
-                content: Faker::Hacker.say_something_smart)
+                content: Faker::Hacker.say_something_smart, published: true,
+                author: editor)
 end
-
-User.create!(role: 'editor', email: "email@website.com", password: '1234fake')

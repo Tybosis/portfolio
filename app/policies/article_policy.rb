@@ -9,7 +9,7 @@ class ArticlePolicy < ApplicationPolicy
       if !user.nil? && user.editor?
         scope.all
       elsif !user.nil? && user.author?
-        scope.where(author_id: @user.id)
+        scope.where(author_id: @user.id) + scope.where(published: true)
       else
         scope.where(published: true)
       end
