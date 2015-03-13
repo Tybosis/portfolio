@@ -9,3 +9,21 @@ article_2:
   content: "Goodbye"
   author: superman
   published: true
+
+article_3:
+  title: 'work in progress'
+  content: 'must change later'
+  author: author
+  published: false
+
+article_4:
+  title: 'Articles are fun to write'
+  content: 'Published content'
+  author: author
+  published: true
+
+article_5:
+  title: 'Writing is fun!'
+  content: 'Cheeseburger'
+  author: superman
+  published: false

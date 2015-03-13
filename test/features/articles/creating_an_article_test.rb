@@ -24,18 +24,21 @@ feature "Creating An Article" do
 
   scenario "unauthenticated site visitors cannot see new article button" do
     visit articles_path
-    page.wont_have_content "New Article"
+    sign_in(:author)
+    page.must_have_content "New Article"
   end
 
   scenario "authors can't publish" do
     sign_in(:author)
-    visit new_article_path
+    visit articles_path
+    click_on 'New Article'
     page.wont_have_field("published")
   end
 
   scenario "editors can publish" do
     sign_in(:editor)
-    visit new_article_path
+    visit articles_path
+    click_on "New Article"
     page.must_have_field("Published")
     fill_in "Title", with: articles(:article_1).title
     fill_in "Content", with: articles(:article_1).content

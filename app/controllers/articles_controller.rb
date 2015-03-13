@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    @articles = policy_scope(Article)
   end
 
   # GET /articles/1
@@ -20,6 +20,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
+    authorize @article
   end
 
   # POST /articles
@@ -28,6 +29,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
 
     respond_to do |format|
+      authorize @article
       if @article.save
         current_user.articles << @article
         format.html { redirect_to @article, notice: 'Article was successfully created.' }
@@ -57,6 +59,7 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   # DELETE /articles/1.json
   def destroy
+    authorize @article
     @article.destroy
     respond_to do |format|
       format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }

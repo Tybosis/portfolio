@@ -3,12 +3,24 @@ require "test_helper"
 feature "Visiting The Article Index" do
 
   scenario "visitors should see all published posts" do
+    visit articles_path
+    page.text.wont_include 'work in progress'
   end
 
   scenario "authors should see all their own posts, published and unpublished" do
+    sign_in(:author)
+    visit articles_path
+    page.text.must_include 'work in progress'
+    page.text.must_include 'Articles are fun to write'
+    page.text.wont_include 'Cheeseburger'
   end
 
   scenario "editors should see all posts, published and unpublished" do
+    sign_in(:editor)
+    visit articles_path
+    page.text.must_include 'Hello World'
+    page.text.must_include 'work in progress'
+    page.text.must_include 'Cheeseburger'
   end
 
 end
