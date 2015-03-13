@@ -10,3 +10,5 @@
 Article.create!(title: "#{Faker::Hacker.adjective} #{Faker::Hacker.noun}",
                 content: Faker::Hacker.say_something_smart)
 end
+
+User.create!(role: 'editor', email: "email@website.com", password: '1234fake')

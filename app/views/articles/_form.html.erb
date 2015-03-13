@@ -24,6 +24,16 @@
     </div>
     <div class="small-9 columns"><%= f.text_area :content %></div>
   </div>
+  <% if ArticlePolicy.new(current_user, @article).publish? %>
+    <div class="row collapse">
+      <div class="small-3 columns">
+        <%= f.label :published, class: "right inline", title: "is this article published?", data: { tooltip: true } %>
+      </div>
+      <div class="small-9 columns">
+        <%= f.check_box :published %>
+      </div>
+    </div>
+  <% end %>
   <div class="small-9 small-offset-3 columns">
     <%= f.submit %>
   </div>

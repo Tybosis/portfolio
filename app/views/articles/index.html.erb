@@ -18,13 +18,14 @@
         <td><%= article.title %></td>
         <td><%= article.content %></td>
         <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) if policy(article).update? %></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } if policy(article).destroy? %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Article', new_article_path %>
+<% if policy(Article.new).create? %>
+  <%= link_to 'New Article', new_article_path %>
+<% end %>

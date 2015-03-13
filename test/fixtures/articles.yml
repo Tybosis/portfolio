@@ -2,8 +2,28 @@ article_1:
   title: "Hello World"
   content: "Here I Am"
   author: superman
+  published: true
 
 article_2:
   title: "Won't last long"
   content: "Goodbye"
   author: superman
+  published: true
+
+article_3:
+  title: 'work in progress'
+  content: 'must change later'
+  author: author
+  published: false
+
+article_4:
+  title: 'Articles are fun to write'
+  content: 'Published content'
+  author: author
+  published: true
+
+article_5:
+  title: 'Writing is fun!'
+  content: 'Cheeseburger'
+  author: superman
+  published: false
