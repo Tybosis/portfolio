@@ -14,6 +14,7 @@ gem 'foundation-rails'
 gem 'minitest-rails'
 gem "rack-timeout"
 gem 'devise'
+gem 'pundit'
 
 group :development, :test do
   gem 'byebug'

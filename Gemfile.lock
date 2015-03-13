@@ -122,6 +122,8 @@ GEM
     powerpack (0.1.0)
     puma (2.11.1)
       rack (>= 1.1, < 2.0)
+    pundit (0.3.0)
+      activesupport (>= 3.0.0)
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -226,6 +228,7 @@ DEPENDENCIES
   minitest-rails-capybara
   pg (= 0.17.1)
   puma
+  pundit
   rack-timeout
   rails (= 4.2.0)
   rails_12factor (= 0.0.2)

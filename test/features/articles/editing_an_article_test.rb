@@ -16,4 +16,19 @@ feature "Editing An Article" do
     page.text.must_include 'Article was successfully updated'
     page.text.must_include 'This is the New Title'
   end
+
+  scenario "editors should be able to edit any post" do
+  end
+
+  scenario "authors should be able to edit their own unpublished posts" do
+  end
+
+  scenario "authors shouldnt see links to edit posts that arent theirs" do
+  end
+
+  scenario "visitors should not be able to edit any post" do
+  end
+
+  scenario "visitors shoild not be able to see edit links anywhere" do
+  end
 end

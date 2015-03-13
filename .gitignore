@@ -19,3 +19,4 @@
 
 # Ignore DS_store
 .DS_Store
+/config/secrets.yml
