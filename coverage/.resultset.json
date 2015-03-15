@@ -1,4 +1,9 @@
 {
+  "Unit Tests": {
+    "coverage": {
+    },
+    "timestamp": 1426287967
+  },
   "MiniTest": {
     "coverage": {
       "/Users/Typo32/Projects/portfolio/app/models/user.rb": [
@@ -316,6 +321,6 @@
         null
       ]
     },
-    "timestamp": 1426280763
+    "timestamp": 1426378727
   }
 }
