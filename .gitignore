@@ -21,7 +21,7 @@
 .DS_Store
 
 * Ignore secrets
-/config/secrets.yml
+config/secrets.yml
 
 * Ignore coverge
-coverage/
+/coverage/
