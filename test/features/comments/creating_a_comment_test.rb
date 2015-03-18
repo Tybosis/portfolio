@@ -26,7 +26,7 @@ feature "Users can add comments and authors and editors can approve them" do
     page.text.must_include 'Comment was successfully approved'
   end
 
-  scenario "Editors can reject comments" do
+  scenario "Editors can delete unpublished comments" do
     sign_in(:editor)
     visit article_path(articles(:article_1))
     fill_in('Content', with: 'My comment')
