@@ -43,14 +43,4 @@ class ArticlePolicy < ApplicationPolicy
     return false if @user.nil?
     @user.editor? || ((@user.id == record.author_id) && record.published == false)
   end
-
-  def see_comments?
-    return false if @user.nil?
-    @user.editor?
-  end
-
-  def edit_comments?
-    return false if @user.nil?
-    @user.editor?
-  end
 end
