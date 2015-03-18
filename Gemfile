@@ -15,6 +15,7 @@ gem 'minitest-rails'
 gem "rack-timeout"
 gem 'devise'
 gem 'pundit'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'byebug'
