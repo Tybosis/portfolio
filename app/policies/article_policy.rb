@@ -16,6 +16,10 @@ class ArticlePolicy < ApplicationPolicy
     end
   end
 
+  def show?
+    (!user.nil? && user.editor?) || (!user.nil? && (@user.id == record.author_id)) || record.published?
+  end
+
   def create?
     return false if @user.nil?
     @user.editor? || @user.author?
@@ -26,6 +30,10 @@ class ArticlePolicy < ApplicationPolicy
     @user.editor?
   end
 
+  def edit?
+    update?
+  end
+
   def update?
     return false if @user.nil?
     @user.editor? || ((@user.id == record.author_id) && record.published == false)
@@ -34,5 +42,15 @@ class ArticlePolicy < ApplicationPolicy
   def destroy?
     return false if @user.nil?
     @user.editor? || ((@user.id == record.author_id) && record.published == false)
+  end
+
+  def see_comments?
+    return false if @user.nil?
+    @user.editor?
+  end
+
+  def edit_comments?
+    return false if @user.nil?
+    @user.editor?
   end
 end

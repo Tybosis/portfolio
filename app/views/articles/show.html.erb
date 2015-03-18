@@ -23,4 +23,19 @@
   <%= link_to 'Edit', edit_article_path(@article) if policy(@article).update? %> |
   <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Are you sure?' } if policy(@article).destroy? %> |
   <%= link_to 'Back', articles_path %>
+<br />
+<h3>Comments</h3>
+<% if policy(@article).see_comments? %>
+  <div class-"row collapse">
+    <% @article.comments.each do |comment| %>
+        <p><%= comment.commenter_name %></p>
+        <p><%= comment.content %></p>
+        <p><%= link_to 'Edit', edit_article_comment_path(@article, comment) if policy(comment).update? %></p>
+    <% end %>
+  </div>
+<% end %>
 
+
+<%= render 'comment_form' %>
+
+<!-- How do you want approval to work? A checkbox on an edit form? A button that PATCHes to CommentsController#update? -->
