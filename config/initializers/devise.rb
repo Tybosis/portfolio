@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = 'c898d46d78ab979f1ec9e528c0b9a22f37ed7d2c1d0107a7bc0d390b1761023685d995839b54683c5452433a19f57ce5e9718054c6c4bfc73b52c9d384ca56b4'
+  # config.secret_key = 'c898d46d78ab979f1ec9e528c0b9a22f37ed7d2c1d0107a7bc0d390b1761023685d995839b54683c5452433a19f57ce5e9718054c6c4bfc73b52c9d384ca56b4'
 config.omniauth :twitter, Rails.application.secrets.twitter_key, Rails.application.secrets.twitter_secret
 
   # ==> Mailer Configuration
