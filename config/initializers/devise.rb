@@ -5,6 +5,7 @@ Devise.setup do |config|
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # config.secret_key = 'afd3f072dc10ff258e8882b3050206e6a964c7d25e9c62341837a2718869f9bbd46437edfdb9693108ae4ebfbdf7606a91e668804f5b234afbbf704c655d5967'
+config.omniauth :twitter, Rails.application.secrets.twitter_key, Rails.application.secrets.twitter_secret
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
