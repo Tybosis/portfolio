@@ -15,6 +15,7 @@ gem 'minitest-rails'
 gem "rack-timeout"
 gem 'devise'
 gem 'pundit'
+gem 'omniauth-twitter'
 
 group :development, :test do
   gem 'byebug'
