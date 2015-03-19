@@ -16,6 +16,9 @@ gem "rack-timeout"
 gem 'devise'
 gem 'pundit'
 gem 'omniauth-twitter'
+gem 'puma'
+gem 'pry'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'byebug'
@@ -32,7 +35,6 @@ end
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
-  gem 'puma'
 end
 
 gem "codeclimate-test-reporter", group: :test, require: nil

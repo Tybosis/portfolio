@@ -1,12 +1,11 @@
 require 'test_helper'
 
 feature "Users can add comments and authors and editors can approve them" do
-  scenario "Visitors can post comments, but they don't show up until published" do
+  scenario "Visitors can see comments, but they cant write new ones" do
     visit article_path(articles(:article_1))
-    fill_in('Content', with: 'This is a comment')
-    click_on 'Create Comment'
-    page.text.must_include 'Comment was successfully created'
-    page.text.wont_include 'This is a comment'
+    page.text.must_include 'This article rules!'
+    page.text.wont_include 'content'
+    page.text.wont_include 'Create comment'
   end
 
   scenario "Visitors can see approved comments on that articles show page" do

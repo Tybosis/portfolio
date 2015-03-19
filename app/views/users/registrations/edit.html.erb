@@ -23,8 +23,10 @@
   </div>
 
   <div class="field">
+  <% if f.object.encrypted_password.present? %>
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
+  <% end %>
   </div>
 
   <div class="actions">
