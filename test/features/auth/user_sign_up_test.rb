@@ -24,4 +24,19 @@ feature "A user should be able to sign up" do
     # then they should be signed out and an error message should appear
     page.text.must_include('Signed out successfully')
   end
+
+  scenario "sign in with twitter works" do
+  OmniAuth.config.test_mode = true
+  OmniAuth.config.add_mock(:twitter,
+                          {
+                          uid: '12345',
+                          info: { nickname: 'test_twitter_user'},
+                          })
+  visit articles_path
+  Capybara.current_session.driver.request.env['devise.mapping'] = Devise.mappings[:user]
+  Capybara.current_session.driver.request.env['omniauth.auth'] = OmniAuth.config.mock_auth[:twitter]
+
+  click_on "Sign in with Twitter"
+  page.must_have_content "Logged in as test_twitter_user"
+end
 end
