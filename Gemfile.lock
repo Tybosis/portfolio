@@ -83,6 +83,8 @@ GEM
     faker (1.4.3)
       i18n (~> 0.5)
     ffi (1.9.8)
+    font-awesome-sass (4.3.2)
+      sass (~> 3.2)
     formatador (0.2.5)
     foundation-rails (5.5.1.0)
       railties (>= 3.1.0)
@@ -280,6 +282,7 @@ DEPENDENCIES
   devise
   eefgilm
   faker
+  font-awesome-sass
   foundation-rails
   guard
   guard-minitest
@@ -289,6 +292,7 @@ DEPENDENCIES
   minitest-rails-capybara
   omniauth-twitter
   pg (= 0.17.1)
+  pry
   puma
   pundit
   rack-timeout

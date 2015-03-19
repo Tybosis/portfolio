@@ -36,7 +36,6 @@
   </div>
 <% end %>
 
-
-<%= render 'comment_form' %>
-
-<!-- How do you want approval to work? A checkbox on an edit form? A button that PATCHes to CommentsController#update? -->
+<% if user_signed_in? %>
+  <%= render 'comment_form' %>
+<% end %>
