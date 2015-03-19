@@ -24,7 +24,6 @@ group :development, :test do
   gem 'capybara'
   gem 'minitest-rails-capybara'
   gem 'rubocop', require: false
-  gem 'simplecov', require: false, group: :test
   gem 'guard'
   gem 'guard-minitest'
 end
@@ -34,5 +33,7 @@ group :production do
   gem 'rails_12factor', '0.0.2'
   gem 'puma'
 end
+
+gem "codeclimate-test-reporter", group: :test, require: nil
 
 ruby "2.2.0"
