@@ -15,6 +15,8 @@ gem 'minitest-rails'
 gem "rack-timeout"
 gem 'devise'
 gem 'pundit'
+gem 'omniauth-twitter'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'byebug'
@@ -32,5 +34,7 @@ group :production do
   gem 'rails_12factor', '0.0.2'
   gem 'puma'
 end
+
+gem "codeclimate-test-reporter", group: :test, require: nil
 
 ruby "2.2.0"
