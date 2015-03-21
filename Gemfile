@@ -16,6 +16,7 @@ gem "rack-timeout"
 gem 'devise'
 gem 'pundit'
 gem 'omniauth-twitter'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'byebug'
