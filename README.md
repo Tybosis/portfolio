@@ -1,4 +1,6 @@
 # My Portfolio
+[![Code Climate](https://codeclimate.com/github/Tybosis/portfolio/badges/gpa.svg)](https://codeclimate.com/github/Tybosis/portfolio)
+[![Test Coverage](https://codeclimate.com/github/Tybosis/portfolio/badges/coverage.svg)](https://codeclimate.com/github/Tybosis/portfolio)
 
 By Tyler Pottle.
 

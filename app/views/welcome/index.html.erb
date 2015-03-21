@@ -13,18 +13,6 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<!-- Normalize CSS -->
-	<link rel="stylesheet" href="css/normalize.css">
-
-	<!-- Foundation core CSS -->
-	<link rel="stylesheet" href="css/foundation.min.css">
-
-	<!-- Custom styles for this template -->
-	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="css/csslider.css">
-
-	<!-- Font Awesome core CSS -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
 
 	<!-- Favicons -->
 	<link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
@@ -42,9 +30,6 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
-
-	<!-- Modernizr Scripts -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
 
 </head>
 
@@ -96,30 +81,18 @@
 
 
 
-
+<img src="<%= asset_url("background.jpg") %>" alt="" id="jumbotron">
 	<!-- INTRO -->
 	<section class="intro">
 
 		<div class="row">
 
 			<div class="medium-12 columns">
+				<h1>Welcome</h1>
+				<p>Hello! My name is Tyler Pottle. I am a Rails developer in Seattle, WA</p>
 
-				<h1>Designer &amp; Developer</h1>
-				<p>Hello my name is Tyler Pottle, I am a rails developer in Seattle, WA.</p>
+				<p><a href="mailto:tylerpottle@gmail.com" class="button small alert radius">Drop Me A Line</a></p>
 
-				<p><a href="#contact" class="button small alert radius">Drop Me A Line</a></p>
-
-				<!-- Start: Slider -->
-				<div class="csslider">
-
-					<input type="radio" name="slides" id="slides_1" checked>
-					<input type="radio" name="slides" id="slides_2">
-					<ul>
-						<li><img src="<%= asset_url("mac.png") %>" alt=""></li>
-						<li><img src="<%= asset_path("mac.png") %>" alt=""></li>
-					</ul>
-
-					<!-- Buttons Control -->
 					<div class="navigation">
 
 						<div>
@@ -160,25 +133,9 @@
 					<div class="portfolio">
 
 						<div class="portfolio-cover">
-
-							<img src="assets/portfolio/work-1.jpg" alt="">
-
-							<div class="label">
-								<div class="label-text">
-									<h5><a href="#" data-reveal-id="Modal-Portfolio-1" class="text-title">Example Title</a></h5>
-								</div><!-- /.label-text -->
-								<div class="label-bg"></div>
-							</div><!-- /.label -->
-
-						</div><!-- /.portfolio-cover -->
-
-					</div><!-- /.portfolio -->
-
-					<div class="portfolio">
-
-						<div class="portfolio-cover">
-
-							<img src="assets/portfolio/work-2.jpg" alt="">
+							<a href="https://powerful-ridge-2975.herokuapp.com" target="_blank">
+							<img src="<%= asset_url("portfolio/work-1.jpg") %>" alt="">
+							</a>
 
 							<div class="label">
 								<div class="label-text">
@@ -195,14 +152,31 @@
 
 						<div class="portfolio-cover">
 
-							<img src="assets/portfolio/work-3.jpg" alt="">
+							<img src="<%= asset_url("portfolio/work-2.jpg") %>" alt="">
 
 							<div class="label">
 								<div class="label-text">
 									<h5><a href="#" data-reveal-id="Modal-Portfolio-1" class="text-title">Example Title</a></h5>
 								</div><!-- /.label-text -->
 								<div class="label-bg"></div>
-							</div><!-- /.label -->img
+							</div><!-- /.label -->
+
+						</div><!-- /.portfolio-cover -->
+
+					</div><!-- /.portfolio -->
+
+					<div class="portfolio">
+
+						<div class="portfolio-cover">
+
+							<img src="<%= asset_url("portfolio/work-3.jpg") %>" alt="">
+
+							<div class="label">
+								<div class="label-text">
+									<h5><a href="#" data-reveal-id="Modal-Portfolio-1" class="text-title">Example Title</a></h5>
+								</div><!-- /.label-text -->
+								<div class="label-bg"></div>
+							</div><!-- /.label -->
 
 						</div><!-- /.portfolio-cover -->
 
@@ -212,7 +186,7 @@
 
             <div class="portfolio-cover">
 
-              <img src="assets/portfolio/work-4.jpg" alt="">
+              <img src="<%= asset_url("portfolio/work-4.jpg") %>" alt="">
 
               <div class="label">
                 <div class="label-text">
@@ -261,17 +235,17 @@
 
 				<div class="medium-4 columns">
 
-					<h6>Ruby</h6>
-					<div class="progress success round">
-						<span class="meter" style="width: 90%"></span>
-					</div><!-- /.progress -->
-
 					<h6>Rails</h6>
 					<div class="progress success round">
-						<span class="meter" style="width: 90%"></span>
+						<span class="meter" style="width: 100%"></span>
 					</div><!-- /.progress -->
 
-					<h6>Javascript</h6>
+					<h6>Ruby</h6>
+					<div class="progress success round">
+						<span class="meter" style="width: 100%"></span>
+					</div><!-- /.progress -->
+
+					<h6>Git</h6>
 					<div class="progress round">
 						<span class="meter" style="width: 80%"></span>
 					</div><!-- /.progress -->
@@ -281,31 +255,31 @@
 				<div class="medium-4 columns text-center">
 
 					<div class="col-desc">
-						<p>I am a web developer in Seattle, WA.
+						<p>I am a web developer located in Seattle, WA.
             I am currently a student at CodeFellows improving my skills in
             Ruby, Rails, and creating web apps.
             I also enjoy running, drinking coffee, and playing guitar. </p>
 
-						<img src="assets/avatar.jpg" alt="">
+						<img src="<%= asset_url("avatar.jpg") %>" alt="">
 					</div><!-- ./col-desc -->
 
 				</div><!-- /.medium-4 .columns -->
 
 				<div class="medium-4 columns">
 
-					<h6>HTML5</h6>
+					<h6>Javascript</h6>
 					<div class="progress medium-12 round">
-						<span class="meter" style="width: 80%"></span>
+						<span class="meter" style="width: 70%"></span>
 					</div><!-- /.progress -->
 
 					<h6>Jquery</h6>
-					<div class="progress medium-12 alert round">
+					<div class="progress medium-12 round">
 						<span class="meter" style="width: 70%"></span>
 					</div><!-- /.progress -->
 
-					<h6>Sass</h6>
+					<h6>HTML5</h6>
 					<div class="progress medium-12 alert round">
-						<span class="meter" style="width: 70%"></span>
+						<span class="meter" style="width: 60%"></span>
 					</div><!-- /.progress -->
 
 				</div><!-- /.medium-4 .columns -->
@@ -327,31 +301,14 @@
 
 			<div class="medium-12 columns">
 
-				<img src="assets/twitter-bird.png" alt="" class="pulse">
-
-				<div id="tweets"></div>
-				<script>
-					window.onload = function(){
-						twitterFetcher.fetch(
-							'252605694623223809',			// replace to your id twitter app
-							'tweets',						// div id
-							1,								// num tweets
-							true,							// set true if you want urls and hash
-							false,							// Set false if you dont want user photo
-							false,							// Set false if you dont want time of tweet to show.
-							d,								// Format tweet date
-							false,							// Show retweets or not.
-							d,								// function to call when data is ready.
-							false							// Show links for reply, retweet, favourite.
-						);
-						var d = function(){return null};	// nothing function
-					}
-				</script>
-				<script src="js/tweets.js"></script>
-
-				<div class="clearfix"></div>
-				<p><a href="#" class="button tiny radius">Follow @TylerPottle</a></p>
-
+				<img src="<%= asset_url("twitter-bird.png") %>" alt="" class="pulse">
+				<a class="twitter-follow-button"
+  href="https://twitter.com/TylerPottle"
+  data-show-count="false"
+  data-lang="en">
+Follow @TylerPottle
+</a>
+<script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
 			</div><!-- /.medium-12 .columns -->
 
 		</div><!-- /.row -->
@@ -365,52 +322,6 @@
 	<!-- CONTACT -->
 	<section id="contact" class="contact-wrapper">
 
-		<div class="row">
-
-			<div class="medium-12 columns">
-
-				<h3>Let's Talk</h3>
-
-				<div class="line"></div>
-				<div class="clearfix"></div>
-
-			</div><!-- /.medium-12 .columns -->
-
-		</div><!-- /.row -->
-
-		<div class="row">
-
-			<div class="medium-3 columns">&nbsp;</div><!-- /.medium-3 .columns -->
-			<div class="medium-6 columns">
-
-				<form class="contact-form">
-
-					<div class="input-item">
-						<label>Name <span class="required">*</span></label>
-						<input type="text" placeholder="Full name">
-					</div><!-- /.input-item -->
-
-					<div class="input-item">
-						<label>Email <span class="required">*</span></label>
-						<input type="email" placeholder="Email address">
-					</div><!-- /.input-item -->
-
-					<div class="input-item">
-						<label>Messages <span class="required">*</span></label>
-						<textarea cols="10" rows="4" placeholder="Your message"></textarea>
-					</div><!-- /.input-item -->
-
-					<div class="input-item text-center">
-						<input class="button small success radius" type="submit" value="Submit">
-					</div><!-- /.input-item -->
-
-				</form><!-- /.contact-form -->
-
-			</div><!-- /.medium-6 .columns -->
-			<div class="medium-3 columns">&nbsp;</div><!-- /.medium-3 .columns -->
-
-		</div><!-- /.row -->
-
 		<div class="clearfix"></div>
 		<div class="row margin-top">
 
@@ -422,11 +333,8 @@
 				<div class="clearfix"></div>
 
 				<ul class="social-icon">
-					<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
-					<li><a href="#" class="dribbble"><i class="fa fa-dribbble"></i></a></li>
-					<li><a href="#" class="flickr"><i class="fa fa-flickr"></i></a></li>
+					<li><a target="_blank" href="https://www.facebook.com/tyler.pottle" class="facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a target="_blank" href="https://twitter.com/TylerPottle" class="twitter"><i class="fa fa-twitter"></i></a></li>
 				</ul><!-- /.social-icon -->
 
 			</div><!-- /.medium-12 .columns -->
@@ -462,7 +370,7 @@
 	<!-- Start: Modal Portfolio 1 -->
 	<div id="Modal-Portfolio-1" class="reveal-modal small" data-reveal>
 
-		<img src="assets/portfolio/work-1.jpg" alt="">
+		<img src="<%= asset_url("portfolio/work-1.jpg") %>" alt="">
 
 		<h3>Example Title</h3>
 		<p>Macaroon fruitcake marzipan dessert muffin halvah halvah. Cake candy canes apple pie pastry <a href="#">jelly-o caramels</a>. Tiramisu cake lollipop bonbon tart pie caramels biscuit.</p>
@@ -478,18 +386,6 @@
 	<!-- Start: Modal Portfolio 2 -->
 
 	<!-- End: Modal Portfolio 2 -->
-
-
-
-
-	<!-- Load JS here for greater good -->
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/foundation.min.js"></script>
-	<script src="js/plugin.js"></script>
-	<script src="js/main.min.js"></script>
-
-
-
 
 </body>
 
