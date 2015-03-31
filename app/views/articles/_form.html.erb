@@ -1,5 +1,5 @@
 <%= render 'articles/header' %>
-<%= form_for(@article) do |f| %>
+<%= form_for @article, html: { multipart: true } do |f| %>
   <% if @article.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
@@ -34,6 +34,19 @@
       </div>
     </div>
   <% end %>
+  <div class="row-collapse">
+    <div class="small-9 small-offset-3 columns">
+      <%= f.file_field :image %>
+    </div>
+  </div>
+  <div class="row collapse">
+    <div class="small-3 columns">
+      <%= f.label :remote_image_url, "or image URL", class: "right inline" %>
+    </div>
+    <div class="small-9 columns">
+      <%= f.text_field :remote_image_url %>
+    </div>
+  </div>
   <div class="small-9 small-offset-3 columns">
     <%= f.submit %>
   </div>

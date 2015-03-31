@@ -19,6 +19,12 @@ gem 'omniauth-twitter'
 gem 'puma'
 gem 'pry'
 gem 'font-awesome-sass'
+gem "codeclimate-test-reporter", group: :test, require: nil
+
+# image uploads
+gem 'carrierwave'
+gem 'fog'
+gem 'fog-aws'
 
 group :development, :test do
   gem 'byebug'
@@ -37,6 +43,5 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
-gem "codeclimate-test-reporter", group: :test, require: nil
 
 ruby "2.2.0"

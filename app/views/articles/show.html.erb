@@ -1,5 +1,7 @@
 <%= render 'articles/header' %>
-
+<p>
+  <%= image_tag @article.image_url.to_s %>
+</p>
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
