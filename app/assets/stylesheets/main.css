@@ -290,55 +290,55 @@ textarea {
 }
 @font-face {
 	font-family: 'Raleway-Light';
-	src: url('../fonts/raleway/Raleway-Light.eot');
-	src: url('../fonts/raleway/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway/Raleway-Light.woff') format('woff'),
-		 url('../fonts/raleway/Raleway-Light.ttf') format('truetype');
+	src: url('/assets/raleway/Raleway-Light.eot');
+	src: url('/assets/raleway/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+	 		 url('/assets/raleway/Raleway-Light.woff') format('woff'),
+	 		 url('/assets/raleway/Raleway-Light.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Raleway-Regular';
-	src: url('../fonts/raleway/Raleway-Regular.eot');
-	src: url('../fonts/raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway/Raleway-Regular.woff') format('woff'),
-		 url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+	src: url('/assets/raleway/Raleway-Regular.eot');
+	src: url('/assets/raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+			 url('/assets/raleway/Raleway-Regular.woff') format('woff'),
+			 url('/assets/raleway/Raleway-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Raleway-Medium';
-	src: url('../fonts/raleway/Raleway-Medium.eot');
-	src: url('../fonts/raleway/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway/Raleway-Medium.woff') format('woff'),
-		 url('../fonts/raleway/Raleway-Medium.ttf') format('truetype');
+	src: url('/assets/raleway/Raleway-Medium.eot');
+	src: url('/assets/raleway/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('/assets/raleway/Raleway-Medium.woff') format('woff'),
+		 url('/assets/raleway/Raleway-Medium.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Raleway-SemiBold';
-	src: url('../fonts/raleway/Raleway-SemiBold.eot');
-	src: url('../fonts/raleway/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway/Raleway-SemiBold.woff') format('woff'),
-		 url('../fonts/raleway/Raleway-SemiBold.ttf') format('truetype');
+	src: url('/assets/raleway/Raleway-SemiBold.eot');
+	src: url('/assets/raleway/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+		 url('/assets/raleway/Raleway-SemiBold.woff') format('woff'),
+		 url('/assets/raleway/Raleway-SemiBold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Raleway-Bold';
-	src: url('../fonts/raleway/Raleway-Bold.eot');
-	src: url('../fonts/raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/raleway/Raleway-Bold.woff') format('woff'),
-		 url('../fonts/raleway/Raleway-Bold.ttf') format('truetype');
+	src: url('/assets/raleway/Raleway-Bold.eot');
+	src: url('/assets/raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('/assets/raleway/Raleway-Bold.woff') format('woff'),
+		 url('/assets/raleway/Raleway-Bold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Satisfy-Regular';
-	src: url('../fonts/satisfy/Satisfy-Regular.eot');
-	src: url('../fonts/satisfy/Satisfy-Regular.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/satisfy/Satisfy-Regular.woff') format('woff'),
-		 url('../fonts/satisfy/Satisfy-Regular.ttf') format('truetype');
+	src: url('/assets/satisfy/Satisfy-Regular.eot');
+	src: url('/assets/satisfy/Satisfy-Regular.eot?#iefix') format('embedded-opentype'),
+			 url('/assets/satisfy/Satisfy-Regular.woff') format('woff'),
+			 url('/assets/satisfy/Satisfy-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -371,7 +371,7 @@ textarea {
 .intro {
 	background-color: transparent;
 	text-align: center;
-	padding: 4.375rem 0 5.938rem;
+	padding: 3.0rem 0 5.938rem;
 }
 	.intro h1 {
 		font-size: 2.5625rem;
@@ -812,4 +812,15 @@ textarea {
 	#tweets p.tweet {
 		font-size: 1.125rem;
 	}
+}
+
+/***************************************************
+CUSTOM CHANGES BY ME!
+****************************************************/
+
+#jumbotron {
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
 }
