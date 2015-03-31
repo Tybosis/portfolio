@@ -11,6 +11,9 @@
       </ul>
     </div>
   <% end %>
+  <%= f.hidden_field :key %>
+
+  <p>File: <%= @article.image_name %></p>
 
   <div class="row collapse">
     <div class="small-3 columns">
@@ -34,19 +37,6 @@
       </div>
     </div>
   <% end %>
-  <div class="row-collapse">
-    <div class="small-9 small-offset-3 columns">
-      <%= f.file_field :image %>
-    </div>
-  </div>
-  <div class="row collapse">
-    <div class="small-3 columns">
-      <%= f.label :remote_image_url, "or image URL", class: "right inline" %>
-    </div>
-    <div class="small-9 columns">
-      <%= f.text_field :remote_image_url %>
-    </div>
-  </div>
   <div class="small-9 small-offset-3 columns">
     <%= f.submit %>
   </div>

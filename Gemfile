@@ -25,6 +25,7 @@ gem "codeclimate-test-reporter", group: :test, require: nil
 gem 'carrierwave'
 gem 'fog'
 gem 'fog-aws'
+gem 'carrierwave_direct'
 
 group :development, :test do
   gem 'byebug'
