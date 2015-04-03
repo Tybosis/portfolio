@@ -37,6 +37,7 @@ group :development, :test do
   gem 'rubocop', require: false
   gem 'guard'
   gem 'guard-minitest'
+  gem 'brakeman'
 end
 
 group :production do
