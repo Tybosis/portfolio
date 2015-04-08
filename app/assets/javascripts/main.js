@@ -1,7 +1,3 @@
-// START DOCUMENT
-$(document).foundation();
-
-
 
 // ACHOR LINK
 $(function() {
@@ -31,22 +27,22 @@ $(function() {
 	$('.portfolio').hover(
 		function () {
 			$(this).find('.label').stop().animate({bottom: 0}, 300, 'easeOutQuad');
-			$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+			$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
 		},
 		function () {
 			$(this).find('.label').stop().animate({bottom: -60}, 200, 'easeInQuad');
-			$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-		}		
-	);	
+			$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+		}
+	);
 });
 
 
 
-// NICE SCROLL        
-$('html').niceScroll({
-	cursorcolor: '#5f717f',
-	cursorborder: '1px solid #5f717f',
-	cursoropacitymin: '1',
-	scrollspeed: '120',
-	zindex: '9'
-});
+// // NICE SCROLL
+// $('html').niceScroll({
+// 	cursorcolor: '#5f717f',
+// 	cursorborder: '1px solid #5f717f',
+// 	cursoropacitymin: '1',
+// 	scrollspeed: '120',
+// 	zindex: '9'
+// });
