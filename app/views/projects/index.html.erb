@@ -7,10 +7,10 @@
     <div class="nav">
       <%= link_to 'Show', project %>
       <%= link_to 'Edit', edit_project_path(project) %>
-      <%= link_to 'Destroy', project, method: :delete, data: { conform: 'Are you sure?' } %>
-    </dvi>
+      <%= link_to 'Destroy', project, method: :delete, data: { conform: 'Are you sure?' }, remote: true %>
+    </div>
   </li>
   <% end %>
 </ul>
 <br />
-<%= link_to 'New Project', new_project_path %>
+<%= link_to 'New Project', new_project_path, remote: true, id: :new_link %>
