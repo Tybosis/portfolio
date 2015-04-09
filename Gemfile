@@ -17,6 +17,7 @@ gem 'devise'
 gem 'pundit'
 gem 'omniauth-twitter'
 gem 'font-awesome-rails'
+gem 'jquery-turbolinks'
 
 group :development, :test do
   gem 'byebug'
