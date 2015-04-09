@@ -1,0 +1,8 @@
+$('#project_<%= @project.id %>').siblings().hide();
+$('a:contains("Show")').hide();
+$('.nav').append('<a>Back</a>');
+$('a:contains("Back")').on('click', function() {
+  $('a:contains("Show")').show();
+  $('#project_index > li').show();
+  $('a:contains("Back")').remove();
+});

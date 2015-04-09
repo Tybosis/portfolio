@@ -25,12 +25,10 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    if @project.update_attributes(project_params)
-      flash[:notice] = "Project has been updated."
-      redirect_to @project
-    else
-      flash.now[:error] = 'Project could not be updated.'
-      render :edit
+    @project.update_attributes(project_params)
+    respond_to do |format|
+      format.html{ redirect_to @project, notice: "Project has been updated." }
+      format.js
     end
   end
 
