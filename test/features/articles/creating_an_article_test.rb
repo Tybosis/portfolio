@@ -11,7 +11,7 @@ feature "Creating An Article" do
     click_on 'Create'
     # Then a new article should be created with a confirmation message.
     page.text.must_include 'Article was successfully created'
-    page.text.must_include 'Metropolis is a great place to live.'
+    page.text.must_include 'Metropolis is a great place'
     page.has_css? "#author"
     page.text.must_include users(:author).email
     page.text.must_include("Status: Unpublished")

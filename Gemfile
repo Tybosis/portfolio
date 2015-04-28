@@ -16,7 +16,16 @@ gem "rack-timeout"
 gem 'devise'
 gem 'pundit'
 gem 'omniauth-twitter'
-gem 'font-awesome-rails'
+gem 'puma'
+gem 'pry'
+gem 'font-awesome-sass'
+gem "codeclimate-test-reporter", group: :test, require: nil
+
+# image uploads
+gem 'carrierwave'
+gem 'fog'
+gem 'fog-aws'
+gem 'carrierwave_direct'
 
 group :development, :test do
   gem 'byebug'
@@ -26,15 +35,15 @@ group :development, :test do
   gem 'capybara'
   gem 'minitest-rails-capybara'
   gem 'rubocop', require: false
-  gem 'simplecov', require: false, group: :test
+  gem 'guard'
+  gem 'guard-minitest'
+  gem 'brakeman'
 end
 
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
-  gem 'puma'
 end
 
-gem "codeclimate-test-reporter", group: :test, require: nil
 
-ruby "2.2.0"
+ruby "2.2.2"

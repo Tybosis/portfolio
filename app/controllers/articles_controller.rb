@@ -6,16 +6,20 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = policy_scope(Article)
+    @uploader = Article.new.image
+    @uploader.success_action_redirect = new_article_url
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
+    authorize @article
+    # Check policy for this article
   end
 
   # GET /articles/new
   def new
-    @article = Article.new
+    @article = Article.new(key: params[:key])
   end
 
   # GET /articles/1/edit
@@ -69,15 +73,15 @@ class ArticlesController < ApplicationController
 
   private
 
-    # Use callbacks to share common setup or constraints between actions.
-    def set_article
-      @article = Article.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_article
+    @article = Article.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white
-    #list through.
-    def article_params
-      params.require(:article).permit(:title, :content, (:published if
-        ArticlePolicy.new(current_user, @article).publish?))
-    end
+  # Never trust parameters from the scary internet, only allow the white
+  #list through.
+  def article_params
+    params.require(:article).permit(:title, :content, :image, :remote_image_url, :key, (:published if
+      ArticlePolicy.new(current_user, @article).publish?))
+  end
 end

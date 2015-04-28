@@ -14,7 +14,7 @@ feature "Deleting An Article" do
   scenario "editors can delete any post" do
     sign_in(:editor)
     visit article_path(articles(:article_1))
-    click_on 'Destroy'
+    all('a').select { |link| link.text == "Destroy" }.first.click
     page.text.must_include "Article was successfully destroyed."
   end
 
