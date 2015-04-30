@@ -31,7 +31,7 @@ module Portfolio
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.enabled = true
-    config.assets.paths << "#{Rails.root}/app/assets/fonts"
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
     config.middleware.use Rack::Timeout
   end
 end
