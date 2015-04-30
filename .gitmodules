@@ -1,0 +1,3 @@
+[submodule "tyler-blog"]
+	path = tyler-blog
+	url = https://github.com/Tybosis/tyler-blog.git
