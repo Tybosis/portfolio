@@ -1,0 +1,13 @@
+comment_1:
+  commenter_name: Anon
+  commenter_email: 123fake@email.com
+  content: This article sucks!
+  approved: False
+  article: article_1
+
+comment_2:
+  commenter_name: Anon
+  commenter_email: 123fake@email.com
+  content: This article rules!
+  approved: True
+  article: article_1

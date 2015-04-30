@@ -42,10 +42,18 @@
 </table> -->
 
 <br>
+<div class="row collapse">
 <% if policy(Article.new).create? %>
   <div class="large-12 columns">
     <div class="small-4 small-centered columns new-link">
       <h2><%= link_to 'New Article', new_article_path %></h2>
     </div>
   </div>
+  <div class="row collapse">
+    <%= direct_upload_form_for @uploader do |f| %>
+      <div class="small-3 columns"><%= f.file_field :image %></div>
+      <div class="small-3 columns"><%= f.submit "Upload Image" %></div>
+    <% end %>
+  </div>
+</div>
 <% end %>

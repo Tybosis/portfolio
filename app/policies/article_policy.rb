@@ -16,6 +16,10 @@ class ArticlePolicy < ApplicationPolicy
     end
   end
 
+  def show?
+    (!user.nil? && user.editor?) || (!user.nil? && (@user.id == record.author_id)) || record.published?
+  end
+
   def create?
     return false if @user.nil?
     @user.editor? || @user.author?
@@ -24,6 +28,10 @@ class ArticlePolicy < ApplicationPolicy
   def publish?
     return false if @user.nil?
     @user.editor?
+  end
+
+  def edit?
+    update?
   end
 
   def update?
