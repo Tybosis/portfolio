@@ -398,16 +398,16 @@ textarea {
 	margin-top: 2.5rem;
 }
 .portfolio {
-	display: block;
-	float: left;
+	display: inline-block;
 	width: 23%;
 	border: 4px solid #e2e2e2;
 	border-radius: 4px;
-	margin: 1%;
+	margin: auto;
 	overflow: hidden;
 }
 	.portfolio img {
 		position: relative;
+		height: 118px;
 		max-width: 100%;
 		opacity: 0.7;
 		-webkit-transition: 0.25s;
@@ -823,4 +823,9 @@ CUSTOM CHANGES BY ME!
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
+}
+
+.new-link {
+	text-align: center;
+	padding-bottom: 50px;
 }

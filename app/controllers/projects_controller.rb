@@ -11,12 +11,10 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-    if @project.save
-      flash[:notice] = "Project has been created."
-      redirect_to @project
-    else
-      flash.now[:error] = 'Project could not be saved.'
-      render :new
+    @project.save
+    respond_to do |format|
+      format.html { redirect_to @project, notice: "Project has been created." }
+      format.js
     end
   end
 
@@ -27,12 +25,10 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    if @project.update_attributes(project_params)
-      flash[:notice] = "Project has been updated."
-      redirect_to @project
-    else
-      flash.now[:error] = 'Project could not be updated.'
-      render :edit
+    @project.update_attributes(project_params)
+    respond_to do |format|
+      format.html{ redirect_to @project, notice: "Project has been updated." }
+      format.js
     end
   end
 
@@ -41,6 +37,7 @@ class ProjectsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to projects_url, notice: 'Project was successfully destroyed.' }
       format.json { head :no_content }
+      format.js
     end
   end
 
