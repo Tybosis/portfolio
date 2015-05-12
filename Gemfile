@@ -47,5 +47,8 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+group :blog do
+  gem 'sinatra', '~> 1.4.2'
+end
 
 ruby "2.2.2"

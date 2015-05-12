@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
   resources :projects
+
+  get '/blog', :to => redirect('/blog.html')
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

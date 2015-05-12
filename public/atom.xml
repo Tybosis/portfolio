@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://tylerpottle.com/blog/atom.xml" rel="self"/>
+  <link href="http://tylerpottle.com/blog/"/>
+  <updated>2015-05-05T19:29:53-07:00</updated>
+  <id>http://tylerpottle.com/blog/</id>
+  <author>
+    <name><![CDATA[Tyler Potle]]></name>
+    <email><![CDATA[tyler.pottle@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Testing]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/05/05/testing/"/>
+    <updated>2015-05-05T19:24:46-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/05/05/testing</id>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<p>This is a test of the awesome blogging system&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s1">&#39;Hello World&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://www.youtube.com/watch?v=POBI7OhGB18">Check this out yo!</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Awesome Post Yo]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/05/01/awesome-post-yo/"/>
+    <updated>2015-05-01T09:50:19-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/05/01/awesome-post-yo</id>
+    <content type="html"><![CDATA[<h1>The Request/Response Cycle</h1>
+
+<h3>By Tyler Pottle</h3>
+
+<p>The request/response cycle is&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/04/30/hello-world/"/>
+    <updated>2015-04-30T13:39:54-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/04/30/hello-world</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
