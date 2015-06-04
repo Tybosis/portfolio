@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://tylerpottle.com/blog/blog/2015/05/14/youtube-test/</loc>
+    <loc>http://tylerpottle.com/blog/blog/2015/05/14/my-presentation/</loc>
     <lastmod>2015-05-14T11:35:15-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylerpottle.com/blog/blog/2015/05/13/pagination-test/</loc>
-    <lastmod>2015-05-13T21:14:35-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylerpottle.com/blog/blog/2015/05/13/another-one/</loc>
-    <lastmod>2015-05-13T21:11:30-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylerpottle.com/blog/blog/2015/05/13/something-for-a-test/</loc>
-    <lastmod>2015-05-13T21:03:54-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylerpottle.com/blog/blog/2015/05/05/testing/</loc>
-    <lastmod>2015-05-05T19:24:46-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylerpottle.com/blog/blog/2015/05/01/awesome-post-yo/</loc>
-    <lastmod>2015-05-01T09:50:19-07:00</lastmod>
-  </url>
-  <url>
-    <loc>http://tylerpottle.com/blog/blog/2015/04/30/hello-world/</loc>
-    <lastmod>2015-04-30T13:39:54-07:00</lastmod>
   </url>
   <url>
     <loc>http://tylerpottle.com/blog/blog/archives/</loc>
