@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tyler's Blog]]></title>
+  <link href="http://tylerpottle.com/blog/atom.xml" rel="self"/>
+  <link href="http://tylerpottle.com/blog/"/>
+  <updated>2015-06-04T12:01:30-07:00</updated>
+  <id>http://tylerpottle.com/blog/</id>
+  <author>
+    <name><![CDATA[Tyler Potle]]></name>
+    <email><![CDATA[tyler.pottle@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Youtube Test]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/05/14/youtube-test/"/>
+    <updated>2015-05-14T11:35:15-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/05/14/youtube-test</id>
+    <content type="html"><![CDATA[<h4>Can we embed a youtube clip in this post?</h4>
+
+<p><em>Keep reading to find out!</em></p>
+
+<!-- more -->
+
+
+<h5><strong>This is the Greatest Song Ever Written in the History of Mankind!</strong></h5>
+
+<div class="embed-video-container"><iframe src="//www.youtube.com/embed/NFTaiWInZ44" allowfullscreen></iframe></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pagination Test]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/05/13/pagination-test/"/>
+    <updated>2015-05-13T21:14:35-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/05/13/pagination-test</id>
+    <content type="html"><![CDATA[<h3>Testing the Pagination</h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Another One]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/05/13/another-one/"/>
+    <updated>2015-05-13T21:11:30-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/05/13/another-one</id>
+    <content type="html"><![CDATA[<p>this is another test post &hellip;</p>
+
+<!-- more -->
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">words</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="s2">&quot;World&quot;</span><span class="o">]</span>
+</span><span class='line'><span class="n">words</span><span class="o">.</span><span class="n">inject</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span><span class="o">|</span><span class="n">total</span><span class="p">,</span> <span class="n">word</span><span class="o">|</span> <span class="n">total</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">word</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Something for a Test]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/05/13/something-for-a-test/"/>
+    <updated>2015-05-13T21:03:54-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/05/13/something-for-a-test</id>
+    <content type="html"><![CDATA[<h3>This is a test</h3>
+
+<!-- more -->
+
+
+<p><a href="www.reddit.com">This is a link!</a></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">print</span> <span class="s">&#39;Hello World&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Testing]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/05/05/testing/"/>
+    <updated>2015-05-05T19:24:46-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/05/05/testing</id>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<p>This is a test of the awesome blogging system&hellip;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s1">&#39;Hello World&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://www.youtube.com/watch?v=POBI7OhGB18">Check this out yo!</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Awesome Post Yo]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/05/01/awesome-post-yo/"/>
+    <updated>2015-05-01T09:50:19-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/05/01/awesome-post-yo</id>
+    <content type="html"><![CDATA[<h1>The Request/Response Cycle</h1>
+
+<h3>By Tyler Pottle</h3>
+
+<p>The request/response cycle is&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/04/30/hello-world/"/>
+    <updated>2015-04-30T13:39:54-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/04/30/hello-world</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
