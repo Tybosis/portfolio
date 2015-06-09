@@ -4,7 +4,7 @@
   <title><![CDATA[Tyler's Blog]]></title>
   <link href="http://tylerpottle.com/blog/atom.xml" rel="self"/>
   <link href="http://tylerpottle.com/blog/"/>
-  <updated>2015-06-04T15:20:18-07:00</updated>
+  <updated>2015-06-09T15:25:53-07:00</updated>
   <id>http://tylerpottle.com/blog/</id>
   <author>
     <name><![CDATA[Tyler Potle]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Gems You Should Know: Eefgilm]]></title>
+    <link href="http://tylerpottle.com/blog/blog/2015/06/09/gems-you-should-know-eefgilm/"/>
+    <updated>2015-06-09T14:30:24-07:00</updated>
+    <id>http://tylerpottle.com/blog/blog/2015/06/09/gems-you-should-know-eefgilm</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<h4>This is an ongoing series where I share gems I think are worth checking out!</h4>
+
+<p>Today we will examine a little gem with great power.  Eefgilm is a gemfile cleaner that makes the auto generated rails gemfile much easier to read.</p>
+
+<p><em>From the Eefgilm Github readme:</em></p>
+
+<blockquote><p>Eefgilm automatically modifies a ruby gemfile to make them a little easier to read, it does this by alphabetizing the gems, removing all comments, and removing all whitespace including leading and trailing.</p></blockquote>
+
+<h3>How To Use:</h3>
+
+<p>All you have to do to use Eefgilm is first add it to your gemfile:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="s1">&#39;eefgilm&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then, run bundle:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">bundle</span> <span class="n">install</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finally, run the eefgilm command from your rails app directory:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">eefgilm</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and voila!  Your gemfile will be beautified!</p>
+
+<h3><strong>Here&rsquo;s a gif of Eefgilm in action to see how it works:</strong></h3>
+
+<p><img src="http://fat.gfycat.com/FastDazzlingHammerheadbird.gif" width="760" alt="Banner" /></p>
+
+<h3>Sources</h3>
+
+<p><a href="https://github.com/enilsen16/Eefgilm">Eefgilm Github</a></p>
+
+<p>Gif made with <a href="http://www.cockos.com/licecap/">LICEcap</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Watch My Presentation on Practical Object Oriented Design in Ruby!]]></title>
